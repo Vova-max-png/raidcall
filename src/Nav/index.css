@@ -1,0 +1,111 @@
+nav {
+    height: calc(100% - 20px);
+    background-color: #333333;
+    width: 250px;
+    overflow: hidden;
+}
+
+.lists {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.lists ul {
+    list-style-type: none;
+}
+
+.lists .servers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.lists .servers .server {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #585858;
+    border-radius: 50%;
+    transition: all 0.2s;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.lists .servers .server:hover {
+    border-radius: 35%;
+    background-color: #818181;
+}
+
+.lists .servers .server img {
+    width: 120%;
+    color: white;
+}
+
+.lists .people, .lists .servers {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+.lists .people {
+    height: 100%;
+    width: calc(100% - 60px);
+    padding: 8px;
+    overflow-y: scroll;
+    background-color: #3f3f3f;
+}
+
+.lists .people .person {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    /* background-color: rgb(87, 87, 87); */
+    transition: all 0.1s;
+    margin-bottom: 2px;
+}
+
+.lists .people .person:hover {
+    background-color: #ffffff17;
+}
+
+.lists .people .person .name {
+    color: #fff;
+}
+
+.lists .people .person img {
+    width: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.lists .people .me {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 65px);
+    height: 45px;
+    background-color: black;
+}
+
+.lists .people .me p {
+    color: #fff;
+    user-select: all;
+}
+
+.lists .people .me img {
+    margin-left: 10px;
+    width: 35px;
+    border-radius: 50%;
+}

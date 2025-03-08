@@ -1,0 +1,56 @@
+.title-bar {
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #333333;
+    cursor: default;
+}
+
+.drag .title {
+    color: #c9c9c9;
+    margin-left: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.drag {
+    width: calc(100% - 10*3px);
+}
+
+.buttons {
+    display: flex;
+}
+
+.close, .collapse, .expand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    cursor: pointer;
+    width: 10px;
+}
+
+.close:hover {
+    background-color: #d60000;
+}
+
+.collapse:hover, .expand:hover {
+    background-color: #75757552;
+}
+
+.collapse img {
+    width: 8px;
+}
+
+.expand img {
+    width: 10px;
+}
+
+.close img {
+    width: 20px;
+    filter: brightness(0%) invert(100%);
+}
